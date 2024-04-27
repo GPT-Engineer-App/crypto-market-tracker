@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Index from "./pages/Index.jsx";
 import Navigation from "./components/Navigation.jsx";
+import Admin from "./pages/Admin.jsx";
 
 function App() {
   return (
@@ -13,6 +14,15 @@ function App() {
             <>
               <Navigation />
               <Index />
+            </>
+          }
+        />
+        <Route
+          path="/admin"
+          element={
+            <>
+              <Navigation />
+              <Admin />
             </>
           }
         />
