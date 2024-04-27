@@ -28,7 +28,6 @@ function Navigation() {
         </Link>
       </Box>
       <Spacer />
-      const {(colorMode, toggleColorMode)} = useColorMode();
       <Button leftIcon={<FaUserCircle />} variant="outline" colorScheme="whiteAlpha" mr="4" onClick={() => alert("Signup feature not implemented yet.")}>
         Sign Up
       </Button>
