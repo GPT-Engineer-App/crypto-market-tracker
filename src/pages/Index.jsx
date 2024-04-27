@@ -10,6 +10,13 @@ const Index = () => {
     { name: "Ethereum", symbol: "ETH", price: "$3,000", change: "-0.5%" },
     { name: "Cardano", symbol: "ADA", price: "$1.3", change: "+0.2%" },
     { name: "Binance Coin", symbol: "BNB", price: "$350", change: "+0.7%" },
+
+    ...Array.from({ length: 96 }, (_, i) => ({
+      name: `Crypto ${i + 5}`,
+      symbol: `CRYP${i + 5}`,
+      price: `$${(Math.random() * 1000).toFixed(2)}`,
+      change: `${(Math.random() * 10 - 5).toFixed(2)}%`,
+    })),
   ];
 
   const filteredData = data.filter((coin) => coin.name.toLowerCase().includes(search.toLowerCase()) || coin.symbol.toLowerCase().includes(search.toLowerCase()));
