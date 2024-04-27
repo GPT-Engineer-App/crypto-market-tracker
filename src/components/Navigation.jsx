@@ -28,7 +28,7 @@ function Navigation() {
         </Link>
       </Box>
       <Spacer />
-      <Button leftIcon={<FaUserCircle />} variant="outline" colorScheme="whiteAlpha" mr="4" onClick={() => alert("Signup feature not implemented yet.")}>
+      <Button leftIcon={<FaUserCircle />} variant="outline" colorScheme="whiteAlpha" mr="4">
         Sign Up
       </Button>
       <IconButton icon={colorMode === "light" ? <FaMoon /> : <FaSun />} isRound={true} size="md" alignSelf="center" onClick={toggleColorMode} aria-label="Toggle color mode" />
